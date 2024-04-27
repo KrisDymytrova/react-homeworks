@@ -1,12 +1,12 @@
-import Card from './components/Card'
-import CardClass from './components/CardClass'
+import CardNew from "./components/CardNew";
 
 
 function App() {
     return (
         <div className="App">
-            <Card />
-            <CardClass />
+            <CardNew title={'hi'} />
+            <CardNew text={'how are you?'} />
+            <CardNew title={'hi'} text={'how are you?'} />
         </div>
     );
 }
