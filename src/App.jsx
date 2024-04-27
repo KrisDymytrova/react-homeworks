@@ -1,12 +1,14 @@
-import Card from './components/Card'
-import CardClass from './components/CardClass'
-
+import DefinitionsList from "./components/DefinitionsList";
 
 function App() {
+    const definitions = [
+        { dt: 'one', dd: 'two', id: 1 },
+        { dt: 'another term', dd: 'another description', id: 2 },
+    ];
+
     return (
         <div className="App">
-            <Card />
-            <CardClass />
+            <DefinitionsList data={definitions} />
         </div>
     );
 }
